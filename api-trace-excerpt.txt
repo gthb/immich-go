@@ -1,0 +1,37 @@
+POST /api/assets  ->  201 Created
+    multipart filename: REPRO_eaaed6cd_B.jpg   X-Immich-Checksum: otr6W4t9tqcytIGR16dm8uYi3vE=
+    response: {"id":"9ff10061-dc66-43fd-a5df-8eb0f253b3fb","status":"created"}
+POST /api/assets  ->  201 Created
+    multipart filename: REPRO_eaaed6cd_A.jpg   X-Immich-Checksum: 59W3cd5bUmgOjUj/0puffg4pylU=
+    response: {"id":"0f48ae95-165c-4f4e-b0a4-35e8e30ca769","status":"created"}
+PUT /api/assets/0f48ae95-165c-4f4e-b0a4-35e8e30ca769  ->  200 OK
+    request:  {"dateTimeOriginal":"2023-11-14T22:13:20Z"}
+    response: {"id":"0f48ae95-165c-4f4e-b0a4-35e8e30ca769","createdAt":"2026-08-18T13:24:20.095Z","ownerId":"<owner>","libraryId":null,"type":"IMAGE","originalPath":"/data/upload/<owner>/8a/a1/8aa1d47a-2628-41a8-86 …
+PUT /api/assets/9ff10061-dc66-43fd-a5df-8eb0f253b3fb  ->  200 OK
+    request:  {"dateTimeOriginal":"2023-11-14T22:13:20Z"}
+    response: {"id":"9ff10061-dc66-43fd-a5df-8eb0f253b3fb","createdAt":"2026-08-18T13:24:20.093Z","ownerId":"<owner>","libraryId":null,"type":"IMAGE","originalPath":"/data/upload/<owner>/b2/c4/b2c4d68a-e3da-41b5-9a …
+POST /api/stacks  ->  201 Created
+    request:  {"assetIds":["9ff10061-dc66-43fd-a5df-8eb0f253b3fb","9ff10061-dc66-43fd-a5df-8eb0f253b3fb"]}
+    response: {"id":"8177b72f-c55c-4776-96f0-760d9d8dd103","primaryAssetId":"9ff10061-dc66-43fd-a5df-8eb0f253b3fb","assets":[{"id":"9ff10061-dc66-43fd-a5df-8eb0f253b3fb","createdAt":"2026-08-18T13:24:20.093226+00:0 …
+POST /api/assets  ->  201 Created
+    multipart filename: REPRO_eaaed6cd_A.jpg   X-Immich-Checksum: mmGqtld+Rm7ArIXNlu/wYmdK8cM=
+    response: {"id":"a2bdb763-b8f7-4f4a-855a-1ba6b43d6a03","status":"created"}
+PUT /api/assets/copy  ->  204 No Content
+    request:  {"sourceId":"0f48ae95-165c-4f4e-b0a4-35e8e30ca769","targetId":"a2bdb763-b8f7-4f4a-855a-1ba6b43d6a03","albums":true,"favorite":true,"sharedLinks":true,"sidecar":true,"stack":true}
+DELETE /api/assets  ->  204 No Content
+    request:  {"force":true,"ids":["0f48ae95-165c-4f4e-b0a4-35e8e30ca769"]}
+POST /api/stacks  ->  201 Created
+    request:  {"assetIds":["0f48ae95-165c-4f4e-b0a4-35e8e30ca769","a2bdb763-b8f7-4f4a-855a-1ba6b43d6a03"]}
+    response: {"id":"1aa0f0f4-126b-41fb-832d-d2766284c93f","primaryAssetId":"0f48ae95-165c-4f4e-b0a4-35e8e30ca769","assets":[{"id":"a2bdb763-b8f7-4f4a-855a-1ba6b43d6a03","createdAt":"2026-08-18T13:24:20.131903+00:0 …
+PUT /api/tags  ->  200 OK
+    request:  {"tags":["repro-takeout"]}
+    response: [{"id":"47428fb4-b6c8-4b13-9290-d2c8b127ecea","name":"repro-takeout","value":"repro-takeout","createdAt":"2026-08-18T13:23:12.171Z","updatedAt":"2026-08-18T13:24:20.181Z"}]
+PUT /api/tags/47428fb4-b6c8-4b13-9290-d2c8b127ecea/assets  ->  200 OK
+    request:  {"ids":["9ff10061-dc66-43fd-a5df-8eb0f253b3fb","a2bdb763-b8f7-4f4a-855a-1ba6b43d6a03","0f48ae95-165c-4f4e-b0a4-35e8e30ca769"]}
+    response: [{"id":"9ff10061-dc66-43fd-a5df-8eb0f253b3fb","success":true},{"id":"a2bdb763-b8f7-4f4a-855a-1ba6b43d6a03","success":true},{"id":"0f48ae95-165c-4f4e-b0a4-35e8e30ca769","success":true}]
+PUT /api/tags  ->  200 OK
+    request:  {"tags":["BugRepro"]}
+    response: [{"id":"a9443978-412d-4233-8acc-95e06c1e13f7","name":"BugRepro","value":"BugRepro","createdAt":"2026-08-18T13:23:12.139Z","updatedAt":"2026-08-18T13:24:20.221Z"}]
+PUT /api/tags/a9443978-412d-4233-8acc-95e06c1e13f7/assets  ->  200 OK
+    request:  {"ids":["0f48ae95-165c-4f4e-b0a4-35e8e30ca769","9ff10061-dc66-43fd-a5df-8eb0f253b3fb"]}
+    response: [{"id":"0f48ae95-165c-4f4e-b0a4-35e8e30ca769","success":false,"error":"no_permission"},{"id":"9ff10061-dc66-43fd-a5df-8eb0f253b3fb","success":true}]

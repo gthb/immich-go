@@ -1,0 +1,63 @@
+2026-08-18 13:24:20 INF discovered image REPRO_eaaed6cd_A-edited.jpg
+2026-08-18 13:24:20 INF discovered image REPRO_eaaed6cd_A.jpg
+2026-08-18 13:24:20 INF discovered sidecar REPRO_eaaed6cd_A.jpg.supplemental-metadata.json type=asset metadata title=REPRO_eaaed6cd_A.jpg date=2023-11-14 22:13:20
+2026-08-18 13:24:20 INF discovered image REPRO_eaaed6cd_B-edited.jpg
+2026-08-18 13:24:20 INF discovered image REPRO_eaaed6cd_B.jpg
+2026-08-18 13:24:20 INF discovered sidecar REPRO_eaaed6cd_B.jpg.supplemental-metadata.json type=asset metadata title=REPRO_eaaed6cd_B.jpg date=2023-11-14 22:13:20
+2026-08-18 13:24:20 INF associated metadata REPRO_eaaed6cd_A.jpg json=REPRO_eaaed6cd_A.jpg.supplemental-metadata.json matcher=matchNormal
+2026-08-18 13:24:20 INF associated metadata REPRO_eaaed6cd_B.jpg json=REPRO_eaaed6cd_B.jpg.supplemental-metadata.json matcher=matchNormal
+2026-08-18 13:24:20 INF associated metadata REPRO_eaaed6cd_A-edited.jpg json=REPRO_eaaed6cd_A.jpg.supplemental-metadata.json matcher=matchEditedName
+2026-08-18 13:24:20 INF associated metadata REPRO_eaaed6cd_B-edited.jpg json=REPRO_eaaed6cd_B.jpg.supplemental-metadata.json matcher=matchEditedName
+2026-08-18 13:24:20 INF uploaded successfully REPRO_eaaed6cd_B-edited.jpg
+2026-08-18 13:24:20 INF uploaded successfully REPRO_eaaed6cd_A-edited.jpg
+2026-08-18 13:24:20 INF metadata updated REPRO_eaaed6cd_B-edited.jpg
+2026-08-18 13:24:20 INF tagged REPRO_eaaed6cd_B-edited.jpg tag=repro-takeout
+2026-08-18 13:24:20 INF tagged REPRO_eaaed6cd_B-edited.jpg tag=BugRepro
+2026-08-18 13:24:20 INF metadata updated REPRO_eaaed6cd_B.jpg reason=An asset with the same name:"REPRO_eaaed6cd_B.jpg" and date:"2023-11-14 22:13:20" but with bigger size:13.8 KB exists on the server. No need to upload.
+2026-08-18 13:24:20 INF stacked REPRO_eaaed6cd_B-edited.jpg
+2026-08-18 13:24:20 INF stacked REPRO_eaaed6cd_B.jpg
+2026-08-18 13:24:20 INF metadata updated REPRO_eaaed6cd_A-edited.jpg
+2026-08-18 13:24:20 INF tagged REPRO_eaaed6cd_A-edited.jpg tag=repro-takeout
+2026-08-18 13:24:20 INF tagged REPRO_eaaed6cd_A-edited.jpg tag=BugRepro
+2026-08-18 13:24:20 INF tagged REPRO_eaaed6cd_A.jpg tag=repro-takeout
+2026-08-18 13:24:20 INF server asset upgraded REPRO_eaaed6cd_A.jpg
+2026-08-18 13:24:20 INF stacked REPRO_eaaed6cd_A-edited.jpg
+2026-08-18 13:24:20 INF stacked REPRO_eaaed6cd_A.jpg
+2026-08-18 13:24:20 INF created tag tag=repro-takeout
+2026-08-18 13:24:20 INF updated tag tag=repro-takeout assets=3
+2026-08-18 13:24:20 INF created tag tag=BugRepro
+2026-08-18 13:24:20 INF updated tag tag=BugRepro assets=2
+2026-08-18 13:24:20 INF Immich Job command sent resume=thumbnailGeneration
+2026-08-18 13:24:20 INF Immich Job command sent resume=metadataExtraction
+2026-08-18 13:24:20 INF Immich Job command sent resume=videoConversion
+2026-08-18 13:24:20 INF Immich Job command sent resume=faceDetection
+2026-08-18 13:24:20 INF Immich Job command sent resume=smartSearch
+2026-08-18 13:24:20 INF 
+2026-08-18 13:24:20 INF Asset Tracking Report:
+2026-08-18 13:24:20 INF =====================
+2026-08-18 13:24:20 INF Total Assets:          4  (29.4 KB)
+2026-08-18 13:24:20 INF   Processed:           3  (28.3 KB)
+2026-08-18 13:24:20 INF   Discarded:           1  (1.1 KB)
+2026-08-18 13:24:20 INF   Errors:              0  (0 B)
+2026-08-18 13:24:20 INF   Pending:             0  (0 B)
+2026-08-18 13:24:20 INF 
+2026-08-18 13:24:20 INF 
+2026-08-18 13:24:20 INF Event Report:
+2026-08-18 13:24:20 INF =============
+2026-08-18 13:24:20 INF 
+2026-08-18 13:24:20 INF Discovery (Assets):
+2026-08-18 13:24:20 INF   discovered image                   :       4  (29.4 KB)
+2026-08-18 13:24:20 INF 
+2026-08-18 13:24:20 INF Discovery (Non-Assets):
+2026-08-18 13:24:20 INF   discovered sidecar                 :       2  (816 B)
+2026-08-18 13:24:20 INF 
+2026-08-18 13:24:20 INF Asset Lifecycle (PROCESSED):
+2026-08-18 13:24:20 INF   uploaded successfully              :       2  (14.9 KB)
+2026-08-18 13:24:20 INF   server asset upgraded              :       1  (13.4 KB)
+2026-08-18 13:24:20 INF   metadata updated                   :       3  (1.1 KB)
+2026-08-18 13:24:20 INF 
+2026-08-18 13:24:20 INF Processing Events:
+2026-08-18 13:24:20 INF   associated metadata                :       4
+2026-08-18 13:24:20 INF   stacked                            :       4
+2026-08-18 13:24:20 INF   tagged                             :       5
+2026-08-18 13:24:20 INF 
